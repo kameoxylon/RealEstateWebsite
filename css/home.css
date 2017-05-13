@@ -3,8 +3,13 @@
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: 'Pavanam', sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
     letter-spacing: 2px;
+}
+
+body {
+    margin: 0;
+    margin-top: 6;
 }
 
 #nav-wrap {
@@ -85,7 +90,7 @@
     z-index: 1;
     position: relative;
     top: -40px;
-    background-color: rgba(23,82,146,0.8);
+    background-color: rgba(16,75,140,0.8);
     color: white;
 }
 
@@ -100,6 +105,8 @@
     margin-right: 10%;
     margin-top: 4px;
     padding: 6px 6px;
+    padding-right: 9px;
+    padding-left: 9px;
     background-color: rgba(0,126,255,1);
     cursor: pointer;
 }
@@ -126,10 +133,11 @@
     padding-top: 5px;
     padding-bottom: 5px; 
     display: inline-block;
+    position: relative;
 }
 
 .listing-image {
-    max-width: 90%;
+    max-width: 75%;
 }
 
 .title {
@@ -156,7 +164,71 @@
     cursor: pointer;
 }
 
-@media screen and (min-width: 590px) and (max-width: 750px) {
+#footer {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(16, 75, 140, 1);
+}
+
+#footer-date {
+    position: relative;
+    top: -5px;
+    margin-left: 35%;
+    color: white;
+}
+
+#footer-follow {
+    position: relative;
+    top: -5px;
+    margin-left: 5%;
+    color: white;
+}
+
+#social-fb {
+    margin-top: 9px;
+    margin-left: 2%;
+    margin-right: 4px;
+    height: 22px;
+    display: inline;
+}
+
+#social-insta {
+    margin-top: 9px;
+    margin-right: 4px;
+    height: 22px;
+    display: inline;
+}
+
+#social-twitter {
+    margin-top: 10px;
+    height: 20px;
+    display: inline;
+}
+
+@media screen and (min-width: 2000px) {
+    *{
+        font-size: x-large;
+    }
+    .nav-button {
+        padding: 20px 55px;
+        font-size: xx-large;
+    }
+
+    .main-image-info {
+        height: 50px;
+        top: -50px;
+    }
+
+    .title {
+        font-size: x-large;
+    }
+
+    .description {
+        font-size: large;
+    }
+}
+
+@media screen and (min-width: 590px) and (max-width: 768px) {
     .nav-button {
         display: inline-block;
         padding: 20px 30px;
@@ -192,12 +264,20 @@
         text-align: center;
         margin: 0 auto;
     }
+
+    #footer-date {
+        position: relative;
+        top: -5px;
+        margin-left: 25%;
+        color: white;
+    }
 }
 
 @media screen and (min-width: 0px) and (max-width: 589px) {
     .nav-button {
         display: inline-block;
-        padding: 16px 45px;
+        padding: 14px 26px;
+        font-size: small;
     }
 
     .nav-right {
@@ -268,6 +348,48 @@
         top: -26px;
         text-align: center;
         margin: 0 auto;
+    }
+
+    #footer {
+        width: 100%;
+        height: 40px;
+        background-color: rgba(16, 75, 140, 1);
+        font-size: small;
+    }
+
+    #footer-date {
+        position: relative;
+        top: -5px;
+        margin-left: 5%;
+        color: white;
+    }
+
+    #footer-follow {
+        position: relative;
+        top: -5px;
+        margin-left: 5%;
+        color: white;
+    }
+
+    #social-fb {
+        margin-top: 9px;
+        margin-left: 2%;
+        margin-right: 4px;
+        height: 22px;
+        display: inline;
+    }
+
+    #social-insta {
+        margin-top: 9px;
+        margin-right: 4px;
+        height: 22px;
+        display: inline;
+    }
+
+    #social-twitter {
+        margin-top: 10px;
+        height: 20px;
+        display: inline;
     }
 }
 
